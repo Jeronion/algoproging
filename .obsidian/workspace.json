@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Logic Building/Алгоритмическое мышление.md",
+                "file": "Array/Виды поисков/Бинарный поиск.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Алгоритмическое мышление"
+              "title": "Бинарный поиск"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Logic Building/Алгоритмическое мышление.md",
+                "file": "Array/Обход массива.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Алгоритмическое мышление"
+              "title": "Backlinks for Обход массива"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Logic Building/Алгоритмическое мышление.md",
+                "file": "Array/Обход массива.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Алгоритмическое мышление"
+              "title": "Outgoing links from Обход массива"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Logic Building/Алгоритмическое мышление.md",
+                "file": "Array/Обход массива.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Алгоритмическое мышление"
+              "title": "Outline of Обход массива"
             }
           }
         ]
@@ -183,23 +183,32 @@
       "bases:Create new base": false
     }
   },
-  "active": "17dc65e616edfdda",
+  "active": "d4f6f5bdae8ed6a7",
   "lastOpenFiles": [
-    "Array/Удаление и вставка элементов в массив.md",
-    "Array/Обход массива.md",
-    "Array/Линейный поиск.md",
-    "Array/Array Tasks/Linear_search.py",
-    "Array/Array Tasks",
-    "TOSEND.py",
-    "Array/Array tasks/Linear_search.py",
-    "Array/Array/Untitled",
-    "Array/Array tasks",
-    "Array/Массив.md",
+    "Важное/TOSEND.py",
+    "Важное/Темы.md",
+    "Важное/Ресурсы для подготовки.md",
+    "Важное",
+    "Array/Виды поисков/Линейный поиск.md",
+    "Array/Виды поисков/Бинарный поиск.md",
+    "home/Jeronion/algoproging/Array/Виды_поисков/Binary_search.py.md",
+    "home/Jeronion/algoproging/Array/Виды_поисков",
+    "home/Jeronion/algoproging/Array",
+    "home/Jeronion/algoproging",
+    "home/Jeronion",
+    "home",
+    "home/Jeronion/algoproging/Array/Виды.md",
     "Ресурсы для подготовки.md",
     "Темы.md",
-    "Array",
-    "Logic Building/Асимптотический анализ.md",
+    "Array/Структура данных массив/Массив.md",
+    "Array/Структура данных массив",
+    "Array/Структура данных массив/Обход массива.md",
+    "Array/Структура данных массив/Удаление и вставка элементов в массив.md",
+    "Imports.py",
+    "Shared_imports.py",
+    "__init__.py",
     "Logic Building/Построение логики.md",
+    "Logic Building/Асимптотический анализ.md",
     "Logic Building/Алгоритмическое мышление.md"
   ]
 }
