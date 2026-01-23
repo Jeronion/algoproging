@@ -1,10 +1,23 @@
-from ...Imports import *
+from math import *
+from bisect import *
+from heapq import *
+from collections import *
+from itertools import *
+from time import *
+from sys import *
 
-"""Список ссылок решенных задач:
-
-https://leetcode.com/problems/binary-search/description/?envType=study-plan-v2&envId=binary-search
-https://leetcode.com/problems/search-insert-position/?envType=study-plan-v2&envId=binary-search
-"""
+from typing import (
+    List,
+    Optional,
+    Dict,
+    Set,
+    Tuple,
+    Deque,
+    DefaultDict,
+    Any,
+    Callable,
+    Iterable,
+)
 
 def search(nums: list[int], target: int) -> int:
     left, right = 0, len(nums) - 1
@@ -29,3 +42,127 @@ def searchInsertLeft(nums: List[int], target: int) -> int:
             left = mid + 1
     
     return left
+
+
+def nextGreatestLetter(letters: List[str], target: str) -> str:
+    left, right = 0, len(letters) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if letters[mid] <= target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    
+    return letters[0] if letters[mid] < target else letters[mid]
+
+
+def guess(n: int) -> int:
+    # return -1 if num is higher than the picked number
+    # 1 if num is lower than the picked number
+    # otherwise return 0
+    pass
+
+
+def guessNumber(n: int) -> int:
+    left, right = 0, n
+    while left <= right:
+        mid = (left + right) // 2
+        if guess(mid) == 0:
+            return mid
+        elif guess(mid) < 0:
+            right = mid - 1
+        else:
+            left = mid + 1
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=192&chapterid=2#1
+def solution_2():
+    N, K = map(int, input().split())
+    array = list(map(int, input().split()))
+    to_search = map(int, input().split())
+    
+    for x in to_search:
+        left, right = 0, N - 1
+        while left <= right:
+            mid = (left + right) // 2
+            if array[mid] < x:
+                left = mid + 1
+            else:
+                right = mid - 1
+        
+        if left == 0:
+            print(array[0])
+        elif left == N:
+            print(array[N - 1])
+        else:
+            l = array[left - 1]
+            r = array[left]
+            if abs(l - x) <= abs(r - x):
+                print(l)
+            else:
+                print(r)
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=192&chapterid=4#1
+def solution_3():
+    N = int(input())
+    c = 0
+    while N - 1:
+        N = N // 2 + (N % 2)
+        c += 1
+    print(c)
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=192&chapterid=4#1
+def solution_4():
+    N, K = map(int, input().split())
+    arr = list(map(int, input().split()))
+    to_search = map(int, input().split())
+    
+    for x in to_search:
+        result = "NO"
+        left, right = 0, len(arr) - 1
+        while left <= right:
+            mid = (left + right) // 2
+            if arr[mid] < x:
+                left = mid + 1
+            elif arr[mid] > x:
+                right = mid - 1
+            else:
+                result = "YES"
+                break
+        print(result)
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=192&chapterid=111728#1
+def solution_111728():
+    N, K = map(int, input().split())
+    arr = list(map(int, input().split()))
+    
+    for x in map(int, input().split()):
+        result = [None, None]
+        left, right = 0, N - 1
+        # right
+        while left <= right:
+            mid = (left + right) // 2
+            if arr[mid] < x:
+                left = mid + 1
+            else:
+                right = mid - 1
+        
+        if left == N:
+            print(0); continue
+        if arr[left] != x:
+            print(0); continue
+        
+        result[0] = left + 1 if left != N else left
+        left, right = 0, N - 1
+        # left
+        while left <= right:
+            mid = (left + right) // 2
+            if arr[mid] <= x:
+                left = mid + 1
+            else:
+                right = mid - 1
+        result[1] = left
+        print(*result)
