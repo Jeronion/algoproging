@@ -160,6 +160,26 @@
               "icon": "lucide-list",
               "title": "Outline of Обход массива"
             }
+          },
+          {
+            "id": "8ccadffbda7e3af1",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {},
+              "icon": "ag-node-list",
+              "title": "Juggl nodes"
+            }
+          },
+          {
+            "id": "556d633aa1bde38b",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {},
+              "icon": "ag-style",
+              "title": "Juggl style"
+            }
           }
         ]
       }
@@ -176,22 +196,27 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "juggl:Juggl global graph": false
     }
   },
   "active": "17dc65e616edfdda",
   "lastOpenFiles": [
-    "Важное/Ресурсы для подготовки.md",
     "Важное/Темы.md",
+    "Untitled.canvas",
+    "2026-01-24.md",
+    "Untitled.base",
+    "Untitled 1.base",
+    "Array/Виды поисков/Экспоненциальный поиск.md",
+    "Array/Виды поисков/Линейный поиск.md",
+    "Array/Виды поисков/Бинарный поиск.md",
+    "Важное/Ресурсы для подготовки.md",
     "Array/Структура данных массив/Массив.md",
     "Array/Структура данных массив/Обход массива.md",
     "Array/Структура данных массив/Удаление и вставка элементов в массив.md",
     "Logic Building/Алгоритмическое мышление.md",
     "Logic Building/Асимптотический анализ.md",
     "Logic Building/Построение логики.md",
-    "Array/Виды поисков/Экспоненциальный поиск.md",
-    "Array/Виды поисков/Бинарный поиск.md",
-    "Array/Виды поисков/Линейный поиск.md",
     "Важное/TOSEND.py",
     "Важное",
     "home/Jeronion/algoproging/Array/Виды_поисков/Binary_search.py.md",
@@ -203,8 +228,6 @@
     "home/Jeronion/algoproging/Array/Виды.md",
     "Ресурсы для подготовки.md",
     "Темы.md",
-    "Array/Структура данных массив",
-    "Imports.py",
-    "Shared_imports.py"
+    "Array/Структура данных массив"
   ]
 }

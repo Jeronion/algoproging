@@ -166,3 +166,40 @@ def solution_111728():
                 right = mid - 1
         result[1] = left
         print(*result)
+
+
+# https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/?envType=study-plan-v2&envId=binary-search
+def countNegatives(grid: List[List[int]]) -> int:
+    counter = 0
+    n, m = len(grid) - 1, 0
+    while m < len(grid[0]) and n > -1:
+        if grid[n][m] < 0:
+            counter += len(grid[0]) - m
+            n -= 1
+        else:
+            m += 1
+    return counter
+
+
+# https://leetcode.com/problems/valid-perfect-square/?envType=study-plan-v2&envId=binary-search
+# solution 1
+def isPerfectSquare(self, num: int) -> bool:
+    left, right = 0, num
+    while left <= right:
+        mid = (left + right) // 2
+        if mid * mid < num:
+            left = mid + 1
+        elif mid * mid == num:
+            return True
+        else:
+            right = mid - 1
+    return False
+
+
+# solution 2
+class Solution:
+    def isPerfectSquare(self, num: int) -> bool:
+        x = num
+        while x * x >= num:
+            x = (x + num // x) // 2
+        return x * x == num
