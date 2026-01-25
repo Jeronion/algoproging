@@ -183,7 +183,7 @@ def countNegatives(grid: List[List[int]]) -> int:
 
 # https://leetcode.com/problems/valid-perfect-square/?envType=study-plan-v2&envId=binary-search
 # solution 1
-def isPerfectSquare(self, num: int) -> bool:
+def isPerfectSquare(num: int) -> bool:
     left, right = 0, num
     while left <= right:
         mid = (left + right) // 2
@@ -197,9 +197,31 @@ def isPerfectSquare(self, num: int) -> bool:
 
 
 # solution 2
-class Solution:
-    def isPerfectSquare(self, num: int) -> bool:
-        x = num
-        while x * x >= num:
-            x = (x + num // x) // 2
-        return x * x == num
+def isPerfectSquare(self, num: int) -> bool:
+    x = num
+    while x * x >= num:
+        x = (x + num // x) // 2
+    return x * x == num
+
+
+def isBadVersion(bad):
+    pass
+
+# https://leetcode.com/problems/first-bad-version/?envType=study-plan-v2&envId=binary-search
+def firstBadVersion(n: int) -> int:
+    left, right = 1, n
+    while left <= right:
+        mid = (left + right) // 2
+        if isBadVersion(mid):
+            right = mid - 1
+        else:
+            left = mid + 1
+    return left
+
+
+# https://leetcode.com/problems/sqrtx/?envType=study-plan-v2&envId=binary-search
+def mySqrt(x: int) -> int:
+    num = x
+    while x * x > num:
+        x = (x + num // x) // 2
+    return x 
