@@ -225,3 +225,15 @@ def mySqrt(x: int) -> int:
     while x * x > num:
         x = (x + num // x) // 2
     return x 
+
+
+# https://leetcode.com/problems/arranging-coins/description/?envType=study-plan-v2&envId=binary-search
+def arrangeCoins(n: int) -> int:
+    left, right = 0, n
+    while left <= right:
+        mid = (left + right) // 2
+        if (mid + 1) * mid // 2 > n:
+            right = mid - 1
+        else:
+            left = mid + 1
+    return right
