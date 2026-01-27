@@ -1,4 +1,5 @@
 import sys
+import random
 
 # https://informatics.msk.ru/mod/statements/view.php?id=271#1
 def solution_271():
@@ -144,3 +145,42 @@ def solution_1446():
 
     for pid, score in arr:
         print(pid, score)
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=1129#1
+def partition(arr, low, high):
+    pivot_index = random.randint(low, high)
+    arr[pivot_index], arr[high] = arr[high], arr[pivot_index]
+
+    pivot = arr[high]
+    i = low - 1
+
+    for j in range(low, high):
+        if arr[j] < pivot:
+            i += 1
+            arr[i], arr[j] = arr[j], arr[i]
+
+    arr[i + 1], arr[high] = arr[high], arr[i + 1]
+    return i + 1
+
+
+def solution_1129(arr):
+    stack = [(0, len(arr) - 1)]
+
+    while stack:
+        low, high = stack.pop()
+        if low < high:
+            pi = partition(arr, low, high)
+
+            if pi - 1 - low > high - (pi + 1):
+                stack.append((low, pi - 1))
+                stack.append((pi + 1, high))
+            else:
+                stack.append((pi + 1, high))
+                stack.append((low, pi - 1))
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=1129&chapterid=1418#1
+def solution_1418():
+    N = int(input())
+    print(*len(set(map(int, input().split()))))

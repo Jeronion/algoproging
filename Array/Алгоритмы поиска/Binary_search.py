@@ -237,3 +237,71 @@ def arrangeCoins(n: int) -> int:
         else:
             left = mid + 1
     return right
+
+
+# https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/?envType=study-plan-v2&envId=binary-search
+def searchRange(nums: List[int], target: int) -> List[int]:
+    result = [-1, -1]
+    left, right = 0, len(nums) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if nums[mid] >= target:
+            right = mid - 1
+        else:
+            left = mid + 1
+    
+    if left == len(nums):
+        return result
+    if nums[left] != target:
+        return result
+    
+    result[0] = left
+    left, right = 0, len(nums) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if nums[mid] > target:
+            right = mid - 1
+        else:
+            left = mid + 1
+    
+    result[1] = left - 1
+    return result
+
+
+# https://leetcode.com/problems/find-right-interval/description/?envType=study-plan-v2&envId=binary-search
+def findRightInterval(intervals: List[List[int]]) -> List[int]:
+    sorted_intervals = sorted(enumerate(intervals), key=lambda x: x[1][0])
+    result = [-1] * len(intervals)
+    
+    for i in range(len(intervals)):
+        left, right = 0, len(intervals) - 1
+        while left <= right:
+            mid = (left + right) // 2
+            if sorted_intervals[mid][1][0] >= intervals[i][1]:
+                right = mid - 1
+            else:
+                left = mid + 1
+        
+        if left == len(intervals):
+            continue
+        if left == 0 and sorted_intervals[left][1][0] < intervals[i][1]:
+            continue
+        result[i] = sorted_intervals[left][0]
+    
+    return result
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=1966#1
+def solution_1923():
+    w, h, n = map(int, input().split())
+    left, right = max(w, h), max(w * n, h * n) + 1
+    while left <= right:
+        mid = (left + right) // 2
+        if -(-n // (mid // w)) * h <= mid and -(-n // (mid // h)) * w <= mid:
+            right = mid - 1
+        else:
+            left = mid + 1
+    return left
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=1129&chapterid=1418#1
