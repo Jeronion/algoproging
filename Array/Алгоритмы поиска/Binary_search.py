@@ -305,3 +305,73 @@ def solution_1923():
 
 
 # https://informatics.msk.ru/mod/statements/view.php?id=1129&chapterid=1418#1
+def search(nums: List[int], target: int) -> int:
+    left, right = 0, len(nums) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if nums[mid] == target:
+            return mid
+        
+        if nums[mid] >= nums[left]:
+            if nums[left] <= target <= nums[mid]:
+                right = mid - 1
+            else:
+                left = mid + 1
+        else:
+            if nums[mid] <= target <= nums[right]:
+                left = mid + 1
+            else:
+                right = mid - 1
+    return -1
+
+
+# https://leetcode.com/problems/search-a-2d-matrix/?envType=study-plan-v2&envId=binary-search
+def searchMatrix(matrix: List[List[int]], target: int) -> bool:
+    left, right = 0, len(matrix) - 1
+    i = -1
+    while left <= right:
+        mid = (left + right) // 2
+        if matrix[mid][0] <= target <= matrix[mid][-1]:
+            i = mid
+            break
+        elif matrix[mid][0] > target:
+            right = mid - 1
+        else:
+            left = mid + 1
+    if i == -1:
+        return False
+    
+    left, right = 0, len(matrix[i]) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if matrix[i][mid] >= target:
+            right = mid - 1
+        else:
+            left = mid + 1
+    
+    if matrix[i][left] == target:
+        return True
+    return False
+
+
+# informatics.msk.ru/mod/statements/view.php?id=1966&chapterid=1#1
+def checking(arr, x, k):
+    j, c = 0, 1
+    for i in range(1, len(arr)):
+        if arr[i] >= arr[j] + x:
+            j = i
+            c += 1
+    return c >= k
+        
+
+def solution_1():
+    N, K = map(int, input().split())
+    arr = list(map(int, input().split()))
+    left, right = 1, arr[-1] - arr[0]
+    while left <= right:
+        mid = (left + right) // 2
+        if checking(arr, mid, K):
+            left = mid + 1
+        else:
+            right = mid - 1
+    return right

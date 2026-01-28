@@ -184,3 +184,100 @@ def solution_1129(arr):
 def solution_1418():
     N = int(input())
     print(*len(set(map(int, input().split()))))
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=1121#1
+def solution_1442():
+    N = int(input())
+
+    i, j = 1, 1
+    result = 0
+    for _ in range(N):
+        if i ** 2 == j ** 3:
+            result = i ** 2
+            i += 1
+            j += 1
+        elif i ** 2 < j ** 3:
+            result = i ** 2
+            i += 1
+        else:
+            result = j ** 3
+            j += 1
+
+    print(result)
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=1121&chapterid=766#1
+def merge(arr, left, mid, right):
+    n1 = mid - left + 1
+    n2 = right - mid
+    
+    L = [0] * n1
+    R = [0] * n2
+    
+    for i in range(n1):
+        L[i] = arr[left + i]
+    for i in range(n2):
+        R[i] = arr[mid + i + i]
+    
+    i = 0
+    j = 0
+    k = left
+    
+    while i < n1 and j < n2:
+        if L[i] < R[j]:
+            arr[k] = L[i]
+            i += 1
+        else:
+            arr[k] = R[j]
+            j += 1
+        k += 1
+    
+    while i < n1:
+        arr[k] = L[i]
+        i += 1
+        k += 1
+    
+    while j < n1:
+        arr[k] = L[j]
+        j += 1
+        k += 1
+
+
+def merge_sort(arr, left, right):
+    if left < right:
+        mid = (left + right) // 2
+        merge_sort(arr, left, mid)
+        merge_sort(arr, mid + 1, right)
+        merge(arr, left, mid, right)
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=1121&chapterid=767#1
+def solution_767():
+    N = int(input())
+    arr1 = sorted(map(int, input().split()))
+    M = int(input())
+    arr2 = sorted(map(int, input().split()))
+
+    i = j = 0
+
+    while i < N and j < M:
+        if i > 0 and arr1[i] == arr1[i - 1]:
+            i += 1
+            continue
+        if j > 0 and arr2[j] == arr2[j - 1]:
+            j += 1
+            continue
+
+        if arr1[i] == arr2[j]:
+            i += 1
+            j += 1
+        else:
+            return "NO"
+
+    while i < N and arr1[i] == arr1[i - 1]:
+        i += 1
+    while j < M and arr2[j] == arr2[j - 1]:
+        j += 1
+
+    return "YES" if i == N and j == M else "NO"
