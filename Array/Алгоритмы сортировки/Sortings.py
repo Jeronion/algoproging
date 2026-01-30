@@ -281,3 +281,90 @@ def solution_767():
         j += 1
 
     return "YES" if i == N and j == M else "NO"
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=1115#1
+def solution_1115():
+    N = int(input())
+    arr = list(map(int, input().split()))
+    
+    N = len(arr)
+    MAX = max(arr)
+    MIN = min(arr)
+    
+    cntArr = [0] * (MAX - MIN + 1)
+    
+    for v in arr:
+        cntArr[v - MIN] += 1
+    
+    for i in range(1, MAX - MIN + 1):
+        cntArr[i] += cntArr[i - 1]
+    
+    ans = [0] * N
+    for i in range(N - 1, -1, -1):
+        v = arr[i]
+        ans[cntArr[v - MIN] - 1] = v
+        cntArr[v - MIN] -= 1
+    
+    return ans
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=1115&chapterid=1429#1
+def solution_1429():
+    L, N, M = map(int, input().split())
+    diff_arr = [0] * (L + 2)
+    
+    for _ in range(N):
+        l, r = map(int, input().split())
+        diff_arr[l] += 1
+        diff_arr[r + 1] -= 1
+    
+    for i in range(1, L + 2):
+        diff_arr[i] += diff_arr[i - 1]
+    
+    for _ in range(M):
+        print(diff_arr[int(input())])
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=1115&chapterid=1425#1
+def idx(c):
+    if "a" <= c <= "z":
+        return ord(c) - ord("a")
+    return int(c) + 26
+
+
+def solution_1406():
+    seq1 = list(input())
+    seq2 = list(input())
+    if len(seq1) != len(seq2):
+        return "NO"
+
+    cntArr = [0] * 36
+    for i in seq1:
+        cntArr[idx(i)] += 1
+    
+    for i in seq2:
+        cntArr[idx(i)] -= 1
+        if cntArr[idx(i)] == -1:
+            return "NO"
+    
+    return "YES"
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=1115&chapterid=1425#1
+def solution_1425():
+    N = int(input())
+    arr = list(map(int, input().split()))
+    # из условия среди чисел не будет двух, разница между которыми превышает 107
+    cntArr = [0] * 108 
+    M = min(arr)
+    for i in arr:
+        cntArr[i - M] += 1
+    for i in range(1, 108):
+        cntArr[i] += cntArr[i - 1]
+    ans = [0] * N
+    for i in range(N - 1, -1, -1):
+        v = arr[i]
+        ans[cntArr[v - M] - 1] = v
+        cntArr[v - M] -= 1
+    return ans

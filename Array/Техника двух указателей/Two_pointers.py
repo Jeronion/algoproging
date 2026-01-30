@@ -49,3 +49,36 @@ def strStr(haystack: str, needle: str) -> int:
         if haystack[i:i + len(needle)] == needle:
             return i
     return -1
+
+
+# https://leetcode.com/problems/merge-sorted-array/?envType=problem-list-v2&envId=wmnj9rqt
+def merge(nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+    l, r = m - 1, n - 1
+    while l >= 0 and r >= 0:
+        if nums1[l] >= nums2[r]:
+            nums1[l + r + 1] = nums1[l]
+            l -= 1
+        else:
+            nums1[l + r + 1] = nums2[r]
+            r -= 1
+    
+    while r >= 0:
+        nums1[l + r + 1] = nums2[r]
+        r -= 1
+
+
+
+# https://leetcode.com/problems/valid-palindrome/?envType=problem-list-v2&envId=wmnj9rqt
+def isPalindrome(s: str) -> bool:
+    left, right = 0, len(s) - 1
+    while left < right:
+        if not s[left].isalnum():
+            left += 1
+        elif not s[right].isalnum():
+            right -= 1
+        elif s[left].lower() != s[right].lower():
+            return False
+        else:
+            right -= 1
+            left += 1
+    return True
