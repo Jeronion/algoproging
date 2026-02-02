@@ -392,12 +392,26 @@ def findMin(nums: List[int]) -> int:
 
 # https://leetcode.com/problems/h-index-ii/?envType=study-plan-v2&envId=binary-search
 def hIndex(citations: List[int]) -> int:
-    left, right = 0, len(citations) - 1
+    n = len(citations)
+    left, right = 0, n - 1
     while left <= right:
-        mid = left + ((right - left) // 2)
-        if citations[mid] >= len(citations) - mid:
+        mid = (left + right) // 2
+        if citations[mid] >= n - mid:
             right = mid - 1
         else:
             left = mid + 1
-    
-    return len(citations) - left
+    return n - left
+
+
+# https://leetcode.com/problems/single-element-in-a-sorted-array/?envType=study-plan-v2&envId=binary-search
+def singleNonDuplicate(nums: List[int]) -> int:
+    left, right = 0, len(nums) - 1
+    while left < right:
+        mid = (left + right) // 2
+        if mid % 2 == 1:
+            mid -= 1
+        if nums[mid + 1] != nums[mid]:
+            right = mid
+        else:
+            left = mid + 2
+    return nums[left]

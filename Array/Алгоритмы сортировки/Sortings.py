@@ -368,3 +368,65 @@ def solution_1425():
         ans[cntArr[v - M] - 1] = v
         cntArr[v - M] -= 1
     return ans
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=1115&chapterid=537#1
+def solution_537():
+    topics = []
+    msg_topic = []
+
+    for _ in range(int(input())):
+        x = int(input())
+        if x == 0:
+            name = input()
+            body = input()
+            topics.append([name, 1])
+            msg_topic.append(len(topics) - 1)
+        else:
+            body = input()
+            topic_i = msg_topic[x - 1]
+            topics[topic_i][1] += 1
+            msg_topic.append(topic_i)
+
+    best_topic = topics[0]
+    for t in topics:
+        if t[1] > best_topic[1]:
+            best_topic = t
+
+    print(best_topic[0])
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=1115&chapterid=1209#1
+def solution_1209():
+    N = int(input())
+    C = list(map(int, input().split()))
+    K = int(input())
+    P = list(map(int, input().split()))
+    for i in P:
+        C[i - 1] -= 1
+    for i in C:
+        print("no" if i >= 0 else "yes")
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=1115&chapterid=592#1
+def solution_592():
+    N = int(input())
+    cntArr = [0] * 26
+    string = input()
+    for i in string:
+        cntArr[ord(i) - ord("A")] += 1
+    
+    seq = []
+    for i in range(26):
+        seq.append(chr(i + ord("A")) * (cntArr[i] // 2))
+        cntArr[i] -= cntArr[i] // 2 * 2
+    
+    in_center = ""
+    i = 0
+    while i < 26:
+        if cntArr[i] == 1:
+            in_center = chr(i + ord("A"))
+            break
+        i += 1
+    
+    print(''.join(seq) + in_center + ''.join(seq[::-1]))
