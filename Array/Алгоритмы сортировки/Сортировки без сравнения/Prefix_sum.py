@@ -39,3 +39,39 @@ def decode_array(presum):
         arr[i] = presum[i] - presum[i - 1]
     
     return arr
+
+
+
+
+def minSubArrayLen(target: int, nums: list[int]) -> int:
+    res = float("inf")
+    pref = [0] * (len(nums) + 1)
+    for i in range(1, len(nums) + 1):
+        pref[i] = pref[i - 1] + nums[i - 1]
+    
+    left, right = 0, 1
+    while right < len(nums) + 1:
+        s = pref[right] - pref[left]
+        if s >= target:
+            res = min(res, right - left)
+            left += 1
+        else:
+            right += 1
+    
+    return res if res != float("inf") else 0
+
+
+
+def productExceptSelf(nums: list[int]) -> list[int]:
+    output = [0] * len(nums)
+
+    pref = [1] * (len(nums) + 1)
+    for i in range(len(nums)):
+        pref[i] = pref[i - 1] * nums[i]
+    suff = [1] * (len(nums) + 1)
+    for i in range(len(nums) - 1, -1, -1):
+        suff[i] = suff[i + 1] * nums[i]
+    
+    for i in range(len(nums)):
+        output[i] = pref[i - 1] * suff[i + 1]
+    return output

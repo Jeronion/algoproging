@@ -82,3 +82,41 @@ def isPalindrome(s: str) -> bool:
             right -= 1
             left += 1
     return True
+
+
+# https://leetcode.com/problems/valid-triangle-number/?envType=study-plan-v2&envId=binary-search
+def triangleNumber(nums: List[int]) -> int:
+    c = 0
+    n = len(nums)
+    nums.sort()
+    for i in range(n - 1, -1, -1):
+        left, right = 0, i - 1
+        while left < right:
+            if nums[left] + nums[right] > nums[i]:
+                c += right - left
+                right -= 1
+            else:
+                left += 1
+    return c
+
+
+# https://leetcode.com/problems/3sum-closest/?envType=problem-list-v2&envId=wmnj9rqt
+def threeSumClosest(nums: List[int], target: int) -> int:
+    nums.sort()
+    N = len(nums)
+    res = nums[0] + nums[1] + nums[2]
+    for i in range(N - 2):
+        l = i + 1
+        r = N - 1
+        while l < r:
+            total = nums[l] + nums[r] + nums[i]
+            if total == target:
+                return target
+            elif total < target:
+                l += 1
+            else:
+                r -= 1
+            if abs(total - target) < abs(target - res):
+                res = total
+    
+    return res

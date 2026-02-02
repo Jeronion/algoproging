@@ -59,4 +59,22 @@ def solution_844():
     return a[N]
 
 
-print(solution_844())
+# https://informatics.msk.ru/mod/statements/view.php?id=654&chapterid=207#1
+def solution_207():
+    N = int(input())
+    dp = [1] * (N + 2)
+    for i in range(2, N + 2):
+        dp[i] = dp[i - 1] + dp[i - 2]
+    return dp[N + 1]
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=654&chapterid=912#1
+def solution_912():
+    N = int(input())
+    dp = [1] * (N + 2)
+    dp[2] = 2
+    for i in range(3, N + 2):
+        dp[i] = sum(dp[i - 3: i])
+    return dp[N + 1]
+
+

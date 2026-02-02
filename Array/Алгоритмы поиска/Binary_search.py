@@ -415,3 +415,29 @@ def singleNonDuplicate(nums: List[int]) -> int:
         else:
             left = mid + 2
     return nums[left]
+
+
+# https://leetcode.com/problems/peak-index-in-a-mountain-array/?envType=study-plan-v2&envId=binary-search
+def peakIndexInMountainArray(arr: List[int]) -> int:
+    left, right = 0, len(arr) - 1
+    if len(arr) == 1:
+        return 0
+    while left < right:
+        mid = (left + right) // 2
+        if arr[mid] < arr[mid + 1]:
+            left = mid + 1
+        else:
+            right = mid
+    return left
+
+
+# https://leetcode.com/problems/find-k-closest-elements/?envType=study-plan-v2&envId=binary-search
+def findClosestElements(arr: List[int], k: int, x: int) -> List[int]:
+    left, right = 0, len(arr) - k
+    while left < right:
+        mid = (left + right) // 2
+        if x - arr[mid] > arr[mid + k] - x:
+            left = mid + 1
+        else:
+            right = mid
+    return arr[left:left + k]
