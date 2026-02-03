@@ -125,3 +125,37 @@ def solution_112371():
             print(point[0], point[1])
     else:
         print(0)
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=11404&chapterid=112372#1
+def solution_112372():
+    N, M = map(int, input().split())
+    grid = [[int(i % 2 != j % 2) for j in range(M)] for i in range(N)]
+    for row in grid:
+        print(*row)
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=11404&chapterid=112373#1
+def solution_112373():
+    N, M = map(int, input().split())
+    grid = [[i + j for j in range(M)] for i in range(N)]
+    for row in grid:
+        print(*row)
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=11404&chapterid=112374#1
+def solution_112374():
+    N, M = map(int, input().split())
+    grid = [[abs(i - j) for j in range(M)] for i in range(N)]
+    for row in grid:
+        print(*row)
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=11404&chapterid=112375#1
+def solution_112374():
+    N, M = map(int, input().split())
+    grid = [[(M * i) + (j + 1 if i % 2 == 0 else M - j) for j in range(M)] for i in range(N)]
+    for row in grid:
+        print(*row, sep='\t')
+
+solution_112374()

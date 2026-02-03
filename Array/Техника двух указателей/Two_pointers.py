@@ -120,3 +120,42 @@ def threeSumClosest(nums: List[int], target: int) -> int:
                 res = total
     
     return res
+
+
+# https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/?envType=study-plan-v2&envId=binary-search
+def numSubseq(nums, target):
+    mod = 10**9 + 7
+    nums.sort()
+    n = len(nums)
+    
+    power = [1] * n
+    for i in range(1, n):
+        power[i] = (power[i - 1] * 2) % mod
+    
+    left, right = 0, n - 1
+    result = 0
+    
+    while left <= right:
+        if nums[left] + nums[right] <= target:
+            result = (result + power[right - left]) % mod
+            left += 1
+        else:
+            right -= 1
+    
+    return result
+
+
+# https://leetcode.com/problems/sort-colors/description/?envType=problem-list-v2&envId=wmnj9rqt
+def sortColors(nums: List[int]) -> None:
+    left, right = 0, len(nums) - 1
+    mid = 0
+    while mid <= right:
+        if nums[mid] == 0:
+            nums[left], nums[mid] = 0, nums[left]
+            left += 1
+            mid += 1
+        elif nums[mid] == 2:
+            nums[right], nums[mid] = 2, nums[right]
+            right -= 1
+        else:
+            mid += 1

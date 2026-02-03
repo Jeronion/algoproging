@@ -441,3 +441,26 @@ def findClosestElements(arr: List[int], k: int, x: int) -> List[int]:
         else:
             right = mid
     return arr[left:left + k]
+
+
+# https://leetcode.com/problems/successful-pairs-of-spells-and-potions/?envType=study-plan-v2&envId=binary-search
+def successfulPairs(spells: List[int], potions: List[int], success: int) -> List[int]:
+    res = []
+    potions.sort()
+    for i in spells:
+        left, right = 0, len(potions) - 1
+        while left <= right:
+            mid = (left + right) // 2
+            if potions[mid] * i >= success:
+                right = mid - 1
+            else:
+                left = mid + 1
+        if left == len(potions):
+            res.append(0)
+        elif right == -1:
+            res.append(len(potions))
+        else:
+            res.append(len(potions) - left)
+    return res
+
+

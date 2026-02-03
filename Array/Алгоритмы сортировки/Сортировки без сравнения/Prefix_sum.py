@@ -41,8 +41,7 @@ def decode_array(presum):
     return arr
 
 
-
-
+# https://leetcode.com/problems/minimum-size-subarray-sum/description/?envType=problem-list-v2&envId=prefix-sum
 def minSubArrayLen(target: int, nums: list[int]) -> int:
     res = float("inf")
     pref = [0] * (len(nums) + 1)
@@ -61,7 +60,7 @@ def minSubArrayLen(target: int, nums: list[int]) -> int:
     return res if res != float("inf") else 0
 
 
-
+# https://leetcode.com/problems/product-of-array-except-self/description/?envType=problem-list-v2&envId=prefix-sum
 def productExceptSelf(nums: list[int]) -> list[int]:
     output = [0] * len(nums)
 
@@ -75,3 +74,34 @@ def productExceptSelf(nums: list[int]) -> list[int]:
     for i in range(len(nums)):
         output[i] = pref[i - 1] * suff[i + 1]
     return output
+
+
+# https://leetcode.com/problems/range-sum-query-immutable/description/?envType=problem-list-v2&envId=prefix-sum
+def checkSubarraySum(nums: list[int], k: int) -> bool:
+    pref = [0] * (len(nums) + 1)
+    for i in range(1, len(nums) + 1):
+        pref[i] = (pref[i - 1] + nums[i - 1]) % k
+    hash_table = {}
+    for i in range(len(pref)):
+        if hash_table.get(pref[i]) is not None:
+            if hash_table.get(pref[i]) - i != -1:
+                return True
+        else:
+            hash_table[pref[i]] = i
+    return False
+
+
+# https://leetcode.com/problems/contiguous-array/?envType=problem-list-v2&envId=prefix-sum
+def findMaxLength(nums: list[int]) -> int:
+    M = 0
+    pref = [0] * (len(nums) + 1)
+    for i in range(1, len(pref)):
+        pref[i] = pref[i - 1] + (1 if nums[i - 1] else -1)
+    hash_map = {}
+    for i in range(len(pref)):
+        if hash_map.get(pref[i]) is None:
+            hash_map[pref[i]] = i
+        else:
+            M = max(M, i - hash_map[pref[i]])
+    
+    return M
