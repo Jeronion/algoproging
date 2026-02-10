@@ -4,39 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "4203ac94c7bd5000",
+        "id": "a0efd99b7c9c65f3",
         "type": "tabs",
         "children": [
           {
-            "id": "17dc65e616edfdda",
+            "id": "92599047b1175a0a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Array/Виды сортировок/Сортировки.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Сортировки"
-            }
-          },
-          {
-            "id": "d7062e7f3bd2cfaa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Stack, Queue, Deque/Стек.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Стек"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -219,44 +200,43 @@
       "juggl:Juggl global graph": false
     }
   },
-  "active": "d4f6f5bdae8ed6a7",
+  "active": "92599047b1175a0a",
   "lastOpenFiles": [
-    "Stack, Queue, Deque/Stack.py",
-    "Other/Темы.md",
+    "Untitled.base",
+    "Array/Техника двух указателей/Скользящее окно.md",
+    "Untitled 6.base",
+    "Untitled 5.base",
+    "Array/Алгоритмы сортировки/Сортировки.md",
+    "Untitled 4.base",
     "Stack, Queue, Deque/Стек.md",
-    "Stack, Queue, Deque",
-    "Logic Building/Построение логики.md",
-    "Logic Building/Рекурсия.md",
+    "Untitled 3.base",
+    "Array/Алгоритмы поиска/Экспоненциальный поиск.md",
+    "Untitled 2.base",
+    "Array/Структура данных массив/Удаление и вставка элементов в массив.md",
+    "Untitled 1.base",
+    "Other/Темы.md",
     "Logic Building/Теорема Мастера.md",
     "Logic Building/Разделяй и властвуй.md",
-    "Logic Building/Алгоритмическое мышление.md",
-    "Logic Building/Асимптотический анализ.md",
-    "Dynamic Programming/Динамическое программирование.md",
-    "Dynamic Programming/DP.py",
-    "Dynamic Programming",
-    "Other/Ресурсы для подготовки.md",
-    "Other/TOSEND.py",
-    "Other",
-    "Важное/Темы.md",
-    "link-to-your-master-theorem-note.md",
-    "Array/Структура данных массив/Массив.md",
-    "Array/Матрицы/Матрицы.md",
-    "Array/Алгоритмы сортировки/Сортировки без сравнения/Сортировка по разрядам.md",
-    "Untitled.md",
-    "Array/Матрицы/Matrix.py",
-    "Array/Матрицы/Ьatrix.py",
-    "Array/Алгоритмы сортировки/Сортировки без сравнения/Prefix_sum.py",
-    "Array/Матрицы/matrix.py",
-    "Array/Матрицы",
-    "Array/Untitled.md",
-    "Array/Алгоритмы сортировки/Сортировки без сравнения/Сортировка подсчётом.md",
-    "Array/Алгоритмы сортировки/Сортировки без сравнения/Разностный массив.md",
+    "Untitled 7.base",
     "Array/Алгоритмы сортировки/Сортировки без сравнения/Префиксные суммы.md",
-    "Array/Алгоритмы сортировки/Квадратичные сортировки/Сортировка с убыв. смещ..md",
-    "Array/Алгоритмы сортировки/Квадратичные сортировки/Сортировка пузырьком.md",
-    "Array/Алгоритмы сортировки/Квадратичные сортировки/Сортировка вставками.md",
-    "Важное/Ресурсы для подготовки.md",
-    "Array/Алгоритмы сортировки/Сортировки.md",
-    "Untitled.canvas"
+    "Logic Building/Рекурсия.md",
+    "Logic Building/Асимптотический анализ.md",
+    "Logic Building/Алгоритмическое мышление.md",
+    "Logic Building/Построение логики.md",
+    "Array/Структура данных массив/Обход массива.md",
+    "Array/Матрицы/Матрицы.md",
+    "Array/Алгоритмы поиска/Бинарный поиск.md",
+    "Array/Структура данных массив/Массив.md",
+    "Array/Алгоритмы поиска/Линейный поиск.md",
+    "Dynamic Programming/Динамическое программирование.md",
+    "Array/Техника двух указателей/Два указателя.md",
+    "Graph/Граф.md",
+    "Untitled 9.base",
+    "Untitled.canvas",
+    "Untitled 8.base",
+    "Array/Алгоритмы сортировки/O(n log n) сортировки/Быстрая сортировка.md",
+    "2026-02-10.md",
+    "Untitled.md",
+    "Untitled 1.md"
   ]
 }

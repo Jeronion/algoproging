@@ -294,13 +294,15 @@ def findRightInterval(intervals: List[List[int]]) -> List[int]:
 # https://informatics.msk.ru/mod/statements/view.php?id=1966#1
 def solution_1923():
     w, h, n = map(int, input().split())
-    left, right = max(w, h), max(w * n, h * n) + 1
+    left = max(w, h)
+    right = max(w * n, h * n)
     while left <= right:
         mid = (left + right) // 2
-        if -(-n // (mid // w)) * h <= mid and -(-n // (mid // h)) * w <= mid:
+        if (mid // w) * (mid // h) >= n:
             right = mid - 1
         else:
             left = mid + 1
+
     return left
 
 

@@ -1,3 +1,5 @@
+from array import array
+
 # https://informatics.msk.ru/mod/statements/view.php?id=649&chapterid=201#1
 def solution_201():
     N = int(input())
@@ -107,7 +109,6 @@ def solution_915():
 
 
 # https://informatics.msk.ru/mod/statements/view.php?id=654&chapterid=2963#1
-from array import array
 
 def solution_2963():
     N = int(input())
@@ -141,7 +142,3 @@ def solution_2963():
         cur = prev[cur]
 
     print(''.join(reversed(res)))
-
-
-
-solution_2963()
