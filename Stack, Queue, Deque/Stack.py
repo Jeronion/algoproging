@@ -414,22 +414,20 @@ def solution_112498():
 
 
 # https://informatics.msk.ru/mod/statements/view.php?id=11575&chapterid=114261#1
-def apply_op(a, b, op):
-    if op == '+':
-        return a + b
-    if op == '-':
-        return a - b
-    if op == '*':
-        return a * b
-    return a // b
-
-
-# https://informatics.msk.ru/mod/statements/view.php?id=11575&chapterid=114261#1
 def solution_114261():
     s = input()
     nums = []
     ops = []
     priority = {"+": 1, "-": 1, "*": 2, "/": 2}
+    
+    def apply_op(a, b, op):
+        if op == '+':
+            return a + b
+        if op == '-':
+            return a - b
+        if op == '*':
+            return a * b
+        return a // b
     
     i = 0
     while i < len(s):
@@ -457,4 +455,190 @@ def solution_114261():
     print(nums[0])
 
 
-solution_114261()
+# https://informatics.msk.ru/mod/statements/view.php?id=11575&chapterid=114262#1
+def solution_114262():
+    seq = input()
+    priority = {"+": 1, "-": 1, "*": 2, "/": 2}
+    ops = deque()
+    stack = deque()
+    i = 0
+    
+    def apply_op(a, b, op):
+        if op == '+':
+            return a + b
+        if op == '-':
+            return a - b
+        if op == '*':
+            return a * b
+        return a // b
+    
+    while i < len(seq):
+        if seq[i].isdigit():
+            num = 0
+            while i < len(seq) and seq[i].isdigit():
+                num = num * 10 + int(seq[i])
+                i += 1
+            stack.append(num)
+            continue
+        
+        if seq[i] in priority:
+            while (ops and ops[-1] in priority and
+                   priority[ops[-1]] >= priority[seq[i]]):
+                B, A = stack.pop(), stack.pop()
+                op = ops.pop()
+                stack.append(apply_op(A, B, op))
+            ops.append(seq[i])
+        
+        elif seq[i] == "(":
+            ops.append(seq[i])
+        
+        elif seq[i] == ")":
+            while ops and ops[-1] != "(":
+                B, A = stack.pop(), stack.pop()
+                op = ops.pop()
+                stack.append(apply_op(A, B, op))
+            ops.pop()
+        
+        i += 1
+
+    while ops:
+        b = stack.pop()
+        a = stack.pop()
+        op = ops.pop()
+        stack.append(apply_op(a, b, op))
+    
+    print(stack[0])
+
+
+# informatics.msk.ru/mod/statements/view.php?id=11575&chapterid=112500#1
+def solution_112500():
+    seq = input()
+    priority = {"+": 1, "-": 1, "*": 2, "/": 2}
+    stack = deque()
+    ops = deque()
+    i = 0
+    
+    def apply_op(a, b, op):
+        if op == "+":
+            return a + b
+        if op == "-":
+            return a - b
+        if op == "*":
+            return a * b
+        if op == "/":
+            return a / b
+    
+    func_dict = {"sin(": math.sin, "cos(": math.cos, "abs(": abs, "sqrt(": math.sqrt, "(": lambda x: x}
+    
+    while i < len(seq):
+        if seq[i].isdigit():
+            num = 0
+            while i < len(seq) and seq[i].isdigit():
+                num = num * 10 + int(seq[i])
+                i += 1
+            stack.append(num)
+            continue
+        
+        if seq[i] in priority:
+            while ops and ops[-1] in priority and priority[seq[i]] <= priority[ops[-1]]:
+                B, A = stack.pop(), stack.pop()
+                op = ops.pop()
+                stack.append(apply_op(A, B, op))
+            ops.append(seq[i])
+        
+        elif seq[i] == "(":
+            ops.append(seq[i])
+        
+        elif seq[i].isalpha():
+            func = ''
+            while i < len(seq) and seq[i].isalpha():
+                func += seq[i]
+                i += 1
+            func += seq[i]
+            ops.append(func)
+        
+        elif seq[i] == ")":
+            while ops and ops[-1] in priority:
+                B, A = stack.pop(), stack.pop()
+                op = ops.pop()
+                stack.append(apply_op(A, B, op))
+            stack.append(func_dict[ops.pop()](stack.pop()))
+        
+        i += 1
+    
+    while ops:
+        B, A = stack.pop(), stack.pop()
+        op = ops.pop()
+        stack.append(apply_op(A, B, op))
+    
+    print(f"{round(stack.pop(), 3):.3f}")
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=11575&chapterid=112501#1
+def solution_112501():
+    seq = input()
+    vars = {i: int(j) for i, j in map(lambda x: x.rstrip().split("="), sys.stdin.readlines())}
+    priority = {"+": 1, "-": 1, "*": 2, "/": 2}
+    stack = deque()
+    ops = deque()
+    i = 0
+    
+    def apply_op(a, b, op):
+        if op == "+":
+            return a + b
+        if op == "-":
+            return a - b
+        if op == "*":
+            return a * b
+        if op == "/":
+            return a / b
+    
+    func_dict = {"sin(": math.sin, "cos(": math.cos, "abs(": abs, "sqrt(": math.sqrt, "(": lambda x: x}
+    
+    while i < len(seq):
+        if seq[i].isdigit():
+            num = 0
+            while i < len(seq) and seq[i].isdigit():
+                num = num * 10 + int(seq[i])
+                i += 1
+            stack.append(num)
+            continue
+        
+        if seq[i].isalpha():
+            word = ''
+            while i < len(seq) and seq[i].isalpha():
+                word += seq[i]
+                i += 1
+            if i != len(seq) and word + seq[i] in func_dict:
+                word += seq[i]
+                ops.append(word)
+                i += 1
+            else:
+                stack.append(vars[word])
+            continue
+        
+        if seq[i] in priority:
+            while ops and ops[-1] in priority and priority[seq[i]] <= priority[ops[-1]]:
+                B, A = stack.pop(), stack.pop()
+                op = ops.pop()
+                stack.append(apply_op(A, B, op))
+            ops.append(seq[i])
+        
+        elif seq[i] == "(":
+            ops.append(seq[i])
+        
+        elif seq[i] == ")":
+            while ops and ops[-1] in priority:
+                B, A = stack.pop(), stack.pop()
+                op = ops.pop()
+                stack.append(apply_op(A, B, op))
+            stack.append(func_dict[ops.pop()](stack.pop()))
+        
+        i += 1
+    
+    while ops:
+        B, A = stack.pop(), stack.pop()
+        op = ops.pop()
+        stack.append(apply_op(A, B, op))
+    
+    print(f"{round(stack.pop(), 3):.3f}")
