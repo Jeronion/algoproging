@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stack, Queue, Deque/Связный список.md",
+                "file": "Bitwise Manipulation/Побитовые манипуляции.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Связный список"
+              "title": "Побитовые манипуляции"
             }
           }
         ]
@@ -206,12 +206,18 @@
   },
   "active": "1bdc435486b162b7",
   "lastOpenFiles": [
-    "Stack, Queue, Deque/Стек.md",
+    "Logic Building/Разделяй и властвуй.md",
+    "Bitwise Manipulation/Побитовые манипуляции.md",
+    "Bitwise Manipulation/Untitled",
+    "Bitwise Manipulation",
+    "Untitled.md",
     "Stack, Queue, Deque/Связный список.md",
+    "Stack, Queue, Deque/Deque.py",
+    "Stack, Queue, Deque/Queue.py",
+    "Stack, Queue, Deque/Стек.md",
     "Stack, Queue, Deque/LinkedList.py",
     "Стэк.md",
     "Untitled 1.base",
-    "Untitled",
     "Untitled.base",
     "Array/Алгоритмы сортировки/Сортировки без сравнения/Разностный массив.md",
     "Array/Алгоритмы сортировки/Сортировки без сравнения/Префиксные суммы.md",
@@ -225,14 +231,10 @@
     "Array/Алгоритмы сортировки/Квадратичные сортировки/Сортировка выбором.md",
     "Array/Алгоритмы сортировки/Сортировки без сравнения/Сортировка подсчётом.md",
     "Untitled 10.base",
-    "Untitled 9.base",
     "Array/Алгоритмы сортировки/Квадратичные сортировки/Сортировка пузырьком.md",
-    "Untitled 8.base",
-    "Untitled 7.base",
     "Array/Алгоритмы сортировки/Сортировки без сравнения/Сортировка по разрядам.md",
     "Array/Структура данных массив/Удаление и вставка элементов в массив.md",
     "Untitled.canvas",
-    "Logic Building/Разделяй и властвуй.md",
     "Logic Building/Рекурсия.md",
     "Array/Техника двух указателей/Скользящее окно.md",
     "Logic Building/Алгоритмическое мышление.md",
@@ -240,7 +242,6 @@
     "Array/Алгоритмы поиска/Экспоненциальный поиск.md",
     "Other/Темы.md",
     "Logic Building/Теорема Мастера.md",
-    "Logic Building/Асимптотический анализ.md",
-    "Logic Building/Построение логики.md"
+    "Logic Building/Асимптотический анализ.md"
   ]
 }

@@ -142,3 +142,28 @@ def solution_2963():
         cur = prev[cur]
 
     print(''.join(reversed(res)))
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=11575&chapterid=112503#1
+def solution_112503():
+    N = int(input())
+    numbers = [1]
+    i2, i3, i5 = 0, 0, 0
+    for _ in range(N):
+        next2 = numbers[i2] * 2
+        next3 = numbers[i3] * 3
+        next5 = numbers[i5] * 5
+        next_num = min(next2, next3, next5)
+        numbers.append(next_num)
+        
+        if next_num == next2:
+            i2 += 1
+        if next_num == next3:
+            i3 += 1
+        if next_num == next5:
+            i5 += 1
+    
+    print(*numbers[1:])
+
+
+solution_112503()

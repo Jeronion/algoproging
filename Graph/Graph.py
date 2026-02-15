@@ -1,6 +1,7 @@
 from collections import deque
 import heapq
-
+import sys
+sys.setrecursionlimit(10000)
 
 def dijkstra_with_path(adj, src):
     V = len(adj)
@@ -175,35 +176,102 @@ def solution_112635():
     print(c)
 
 
+# https://informatics.msk.ru/mod/statements/view.php?id=11743&chapterid=112636#1
+def solution_112636():
+    n = int(input())
+    matrix = [list(map(int, input().split())) for _ in range(n)]
+
+    isolated = []
+
+    for i in range(n):
+        is_isolated = True
+
+        for j in range(n):
+            if i != j:
+                if matrix[i][j] != 0 or matrix[j][i] != 0:
+                    is_isolated = False
+                    break
+                
+        if is_isolated:
+            isolated.append(i + 1)
+
+    if isolated:
+        print(*isolated)
+    else:
+        print(0)
+
+
 # https://informatics.msk.ru/mod/statements/view.php?id=11743&chapterid=112637#1
 def solution_112637():
-    N = int(input())
-    grid = [list(map(int, input().split())) for _ in range(N)]
-    graph = [[j for j in range(N) if grid[i][j]] for i in range(N)]
-    
+    n = int(input())
+    graph = [list(map(int, input().split())) for _ in range(n)]
     K = int(input())
-    pairs = set()
-    
-    for i in range(N):
+    found = False
+
+    for start in range(n):
         queue = deque()
-        queue.append((i, 0))
-        visited = set()
-        
+        # (текущая вершина, длина, посещённые вершины)
+        queue.append((start, 0, 1 << start))
+
+        reachable = set()
+
         while queue:
-            v, d = queue.popleft()
-            visited.add(v)
-            
-            if d == K + 1:
-                if i < v:
-                    pairs.add((i + 1, v + 1))
+            node, dist, mask = queue.popleft()
+
+            if dist == K + 1:
+                if node != start:
+                    reachable.add(node)
                 continue
             
-            for u in graph[v]:
-                if u not in visited:
-                    queue.append((u, d + 1))
-    
-    if not pairs:
+            for nxt in range(n):
+                if graph[node][nxt] == 1:
+                    if not (mask & (1 << nxt)):  # не посещали
+                        queue.append((nxt, dist + 1, mask | (1 << nxt)))
+
+        for end in sorted(reachable):
+            if start < end:
+                print(start + 1, end + 1)
+                found = True
+
+    if not found:
         print(0)
-    else:
-        for a, b in sorted(pairs):
-            print(a, b)
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=11743&chapterid=112638#1
+def solution_112638():
+    # ГОВНО НЕРАБОЧЕЕ
+    
+    n = int(input())
+    graph = [list(map(int, input().split())) for _ in range(n)]
+    k = int(input())
+
+    count = 0
+
+    for start in range(n):
+        stack = []
+
+        for next_vertex in range(start + 1, n):
+            if graph[start][next_vertex] == 1:
+                visited = [False] * n
+                visited[start] = True
+                visited[next_vertex] = True
+                stack.append((next_vertex, 1, visited))
+
+        while stack:
+            current, depth, visited = stack.pop()
+
+            if depth == k:
+                if graph[current][start] == 1:
+                    count += 1
+                continue
+
+            for next_vertex in range(n):
+                if not visited[next_vertex] and graph[current][next_vertex] == 1:
+                    new_visited = visited[:]
+                    new_visited[next_vertex] = True
+                    stack.append((next_vertex, depth + 1, new_visited))
+
+    print(count // 2)
+
+
+solution_112638()

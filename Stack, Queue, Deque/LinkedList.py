@@ -155,3 +155,20 @@ def partition(head, x):
     left.next = rightNode.next
     
     return leftNode.next
+
+
+# https://informatics.msk.ru/mod/statements/view.php?id=11575&chapterid=112506#1
+def solution_112506():
+    N, K = map(int, input().split())
+    head = ListNode(1)
+    tail = head
+    for i in range(2, N + 1):
+        tail.next = ListNode(i)
+        tail = tail.next
+    tail.next = head
+    
+    for _ in range(N):
+        for i in range(K - 1):
+            tail = tail.next
+        print(tail.next.val, end=" ")
+        tail.next = tail.next.next
