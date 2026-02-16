@@ -274,4 +274,29 @@ def solution_112638():
     print(count // 2)
 
 
-solution_112638()
+# https://leetcode.com/problems/word-search/?envType=problem-list-v2&envId=depth-first-search
+
+def exist(board: list[list[str]], word: str) -> bool:
+    def backtrack(i, j, d):
+        
+        if i < 0 or i >= len(board) or j < 0 or j >= len(board[0]):
+            return False
+        if board[i][j] != word[d]:
+            return False
+        
+        if d == len(word) - 1:
+            return True
+        
+        temp = board[i][j]
+        board[i][j] = ""
+        if backtrack(i + 1, j, d + 1) or backtrack(i - 1, j, d + 1) or backtrack(i, j + 1, d + 1) or backtrack(i, j - 1, d + 1):
+            return True
+        
+        board[i][j] = temp
+        return False
+    
+    for i in range(len(board)):
+        for j in range(len(board[0])):
+            if backtrack(i, j, 0):
+                return True
+    return False

@@ -36,4 +36,4 @@ def solution_112507():
             while deques[i]:
                 fout.write(f"{i + 1} {deques[i].popleft()}\n")
 
-solution_112507()
+

@@ -4,24 +4,49 @@
     "type": "split",
     "children": [
       {
-        "id": "b54e1c0017735435",
+        "id": "a34d5e7ef6e5259f",
         "type": "tabs",
         "children": [
           {
-            "id": "1bdc435486b162b7",
+            "id": "34d19d3d64a658be",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "juggl_view",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Juggl"
+            }
+          },
+          {
+            "id": "721e8de613622b8d",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "juggl_view",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Juggl"
+            }
+          },
+          {
+            "id": "697f18b37e73adeb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bitwise Manipulation/Побитовые манипуляции.md",
+                "file": "Graph/Поиск в глубину (DFS).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Побитовые манипуляции"
+              "title": "Поиск в глубину (DFS)"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -204,44 +229,44 @@
       "juggl:Juggl global graph": false
     }
   },
-  "active": "1bdc435486b162b7",
+  "active": "697f18b37e73adeb",
   "lastOpenFiles": [
-    "Logic Building/Разделяй и властвуй.md",
-    "Bitwise Manipulation/Побитовые манипуляции.md",
-    "Bitwise Manipulation/Untitled",
-    "Bitwise Manipulation",
-    "Untitled.md",
-    "Stack, Queue, Deque/Связный список.md",
-    "Stack, Queue, Deque/Deque.py",
-    "Stack, Queue, Deque/Queue.py",
+    "Other/Темы.md",
+    "Other/Ресурсы для подготовки.md",
+    "Logic Building/Алгоритмическое мышление.md",
+    "Graph/Граф.md",
+    "Graph/Алгоритм Дейкстры.md",
+    "Graph/Поиск в глубину (DFS).md",
+    "Graph/Поиск в ширину (BFS).md",
     "Stack, Queue, Deque/Стек.md",
-    "Stack, Queue, Deque/LinkedList.py",
-    "Стэк.md",
+    "Stack, Queue, Deque/Очередь.md",
+    "Stack, Queue, Deque/Дек.md",
+    "2026-02-16.md",
+    "Связные списки.md",
     "Untitled 1.base",
     "Untitled.base",
-    "Array/Алгоритмы сортировки/Сортировки без сравнения/Разностный массив.md",
-    "Array/Алгоритмы сортировки/Сортировки без сравнения/Префиксные суммы.md",
-    "2026-02-11.md",
-    "Array/Алгоритмы сортировки/Сортировки.md",
-    "Untitled 3.base",
+    "Array/Матрицы/Матрицы.md",
+    "Array/Алгоритмы сортировки/O(n log n) сортировки/Быстрая сортировка.md",
     "Array/Алгоритмы сортировки/O(n log n) сортировки/Сортировка слиянием.md",
-    "Untitled 2.base",
-    "Array/Алгоритмы сортировки/Квадратичные сортировки/Сортировка с убыв. смещ..md",
-    "Array/Алгоритмы сортировки/Квадратичные сортировки/Сортировка вставками.md",
-    "Array/Алгоритмы сортировки/Квадратичные сортировки/Сортировка выбором.md",
-    "Array/Алгоритмы сортировки/Сортировки без сравнения/Сортировка подсчётом.md",
-    "Untitled 10.base",
-    "Array/Алгоритмы сортировки/Квадратичные сортировки/Сортировка пузырьком.md",
-    "Array/Алгоритмы сортировки/Сортировки без сравнения/Сортировка по разрядам.md",
+    "Array/Алгоритмы сортировки/Сортировки.md",
+    "Array/Структура данных массив/Массив.md",
+    "Array/Структура данных массив/Обход массива.md",
     "Array/Структура данных массив/Удаление и вставка элементов в массив.md",
-    "Untitled.canvas",
-    "Logic Building/Рекурсия.md",
+    "Array/Техника двух указателей/Два указателя.md",
     "Array/Техника двух указателей/Скользящее окно.md",
-    "Logic Building/Алгоритмическое мышление.md",
-    "2026-02-10.md",
-    "Array/Алгоритмы поиска/Экспоненциальный поиск.md",
-    "Other/Темы.md",
-    "Logic Building/Теорема Мастера.md",
-    "Logic Building/Асимптотический анализ.md"
+    "Stack, Queue, Deque/Связный список.md",
+    "Dynamic Programming/Динамическое программирование.md",
+    "Bitwise Manipulation/Побитовые манипуляции.md",
+    "Array/Алгоритмы поиска/Бинарный поиск.md",
+    "Logic Building/Разделяй и властвуй.md",
+    "Bitwise Manipulation/Untitled",
+    "Bitwise Manipulation",
+    "Stack, Queue, Deque/Deque.py",
+    "Stack, Queue, Deque/Queue.py",
+    "Stack, Queue, Deque/LinkedList.py",
+    "Untitled 3.base",
+    "Untitled 2.base",
+    "Untitled 10.base",
+    "Untitled.canvas"
   ]
 }
