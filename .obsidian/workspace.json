@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Graph/Поиск в глубину (DFS).md",
+                "file": "Tree/Дерево.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Поиск в глубину (DFS)"
+              "title": "Дерево"
             }
           }
         ],
@@ -232,11 +232,14 @@
   "active": "697f18b37e73adeb",
   "lastOpenFiles": [
     "Other/Темы.md",
+    "Tree/Дерево.md",
+    "Graph/Поиск в глубину (DFS).md",
+    "Tree",
+    "Untitled.md",
     "Other/Ресурсы для подготовки.md",
     "Logic Building/Алгоритмическое мышление.md",
     "Graph/Граф.md",
     "Graph/Алгоритм Дейкстры.md",
-    "Graph/Поиск в глубину (DFS).md",
     "Graph/Поиск в ширину (BFS).md",
     "Stack, Queue, Deque/Стек.md",
     "Stack, Queue, Deque/Очередь.md",
@@ -257,8 +260,6 @@
     "Stack, Queue, Deque/Связный список.md",
     "Dynamic Programming/Динамическое программирование.md",
     "Bitwise Manipulation/Побитовые манипуляции.md",
-    "Array/Алгоритмы поиска/Бинарный поиск.md",
-    "Logic Building/Разделяй и властвуй.md",
     "Bitwise Manipulation/Untitled",
     "Bitwise Manipulation",
     "Stack, Queue, Deque/Deque.py",
@@ -266,7 +267,6 @@
     "Stack, Queue, Deque/LinkedList.py",
     "Untitled 3.base",
     "Untitled 2.base",
-    "Untitled 10.base",
     "Untitled.canvas"
   ]
 }
