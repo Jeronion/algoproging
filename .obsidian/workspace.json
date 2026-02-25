@@ -4,49 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "a34d5e7ef6e5259f",
+        "id": "4ea78b1d3ae93c5f",
         "type": "tabs",
         "children": [
           {
-            "id": "34d19d3d64a658be",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "juggl_view",
-              "state": {},
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "Juggl"
-            }
-          },
-          {
-            "id": "721e8de613622b8d",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "juggl_view",
-              "state": {},
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "Juggl"
-            }
-          },
-          {
-            "id": "697f18b37e73adeb",
+            "id": "6b717fb4e5db5755",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tree/Дерево.md",
+                "file": "Other/Темы.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Дерево"
+              "title": "Темы"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -119,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Array/Обход массива.md",
+                "file": "Graph/Граф.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Обход массива"
+              "title": "Backlinks for Граф"
             }
           },
           {
@@ -196,12 +171,32 @@
             "state": {
               "type": "juggl_nodes",
               "state": {},
+              "icon": "lucide-ghost",
+              "title": "juggl_nodes"
+            }
+          },
+          {
+            "id": "556d633aa1bde38b",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "juggl_style"
+            }
+          },
+          {
+            "id": "e9c5d03cec19be03",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {},
               "icon": "ag-node-list",
               "title": "Juggl nodes"
             }
           },
           {
-            "id": "556d633aa1bde38b",
+            "id": "9791fb28b618eb92",
             "type": "leaf",
             "state": {
               "type": "juggl_style",
@@ -229,25 +224,35 @@
       "juggl:Juggl global graph": false
     }
   },
-  "active": "697f18b37e73adeb",
+  "active": "6b717fb4e5db5755",
   "lastOpenFiles": [
-    "Other/Темы.md",
+    "Untitled.md",
+    "Logic Building/Алгоритмическое мышление.md",
+    "Tree/Бинарное дерево поиска (BST).md",
     "Tree/Дерево.md",
+    "Bitwise Manipulation/Побитовые манипуляции.md",
+    "Graph/Граф.md",
+    "Other/Темы.md",
+    "Other/Ресурсы для подготовки.md",
+    "Dynamic Programming/Динамическое программирование.md",
+    "Untitled 3",
+    "Untitled 2",
+    "Untitled 1",
+    "Untitled",
+    "Untitled.base",
+    "Graph/Алгоритм Дейкстры.md",
+    "Stack, Queue, Deque/Связный список.md",
+    "Stack, Queue, Deque/Очередь.md",
+    "Tree/Tree.py",
+    "Tree.py",
     "Graph/Поиск в глубину (DFS).md",
     "Tree",
-    "Untitled.md",
-    "Other/Ресурсы для подготовки.md",
-    "Logic Building/Алгоритмическое мышление.md",
-    "Graph/Граф.md",
-    "Graph/Алгоритм Дейкстры.md",
     "Graph/Поиск в ширину (BFS).md",
     "Stack, Queue, Deque/Стек.md",
-    "Stack, Queue, Deque/Очередь.md",
     "Stack, Queue, Deque/Дек.md",
     "2026-02-16.md",
     "Связные списки.md",
     "Untitled 1.base",
-    "Untitled.base",
     "Array/Матрицы/Матрицы.md",
     "Array/Алгоритмы сортировки/O(n log n) сортировки/Быстрая сортировка.md",
     "Array/Алгоритмы сортировки/O(n log n) сортировки/Сортировка слиянием.md",
@@ -256,17 +261,7 @@
     "Array/Структура данных массив/Обход массива.md",
     "Array/Структура данных массив/Удаление и вставка элементов в массив.md",
     "Array/Техника двух указателей/Два указателя.md",
-    "Array/Техника двух указателей/Скользящее окно.md",
-    "Stack, Queue, Deque/Связный список.md",
-    "Dynamic Programming/Динамическое программирование.md",
-    "Bitwise Manipulation/Побитовые манипуляции.md",
     "Bitwise Manipulation/Untitled",
-    "Bitwise Manipulation",
-    "Stack, Queue, Deque/Deque.py",
-    "Stack, Queue, Deque/Queue.py",
-    "Stack, Queue, Deque/LinkedList.py",
-    "Untitled 3.base",
-    "Untitled 2.base",
     "Untitled.canvas"
   ]
 }
