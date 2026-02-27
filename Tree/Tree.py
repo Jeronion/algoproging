@@ -43,7 +43,9 @@ print("YES" if is_balanced(root) else "NO")
 """
 
 class Node:
-    def __init__(self, key):
+    __slots__  = ["key", "left", "right"]
+    
+    def __init__(self, key: int) -> None:
         self.key = key
         self.left = None
         self.right = None
@@ -78,7 +80,7 @@ def insert_i(root: Node, key: int, dubs: bool=False) -> Node:
             dummy = dummy.right
     return root
 
-def search_BST(root, key):
+def search_BST(root: Node, key: int) -> bool:
     # for BST only
     present = False
 
@@ -93,6 +95,35 @@ def search_BST(root, key):
 
     return present
 
+
+
+
+def delete(root: Node | None, key: int) -> Node | None:
+    if root is None:
+        return None
+
+    if key < root.key:
+        root.left = delete(root.left, key)
+    elif key > root.key:
+        root.right = delete(root.right, key)
+    else:
+        if root.left is None and root.right is None:
+            return None
+        
+        if root.left is None:
+            return root.right
+        if root.right is None:
+            return root.left
+        
+        max_left = root.left
+        while max_left.right:
+            max_left = max_left.right
+        
+        root.key = max_left.key
+        
+        root.left = delete(root.left, max_left.key)
+
+    return root
 
 def getDepth(root: Node) -> int:
     if root is None:
@@ -340,6 +371,8 @@ def build_tree(elements: Iterable, dubs: bool=False) -> Node:
 
 
 class TreeNode:
+    __slots__  = ["val", "left", "right"]
+    
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
@@ -471,21 +504,19 @@ class Solution:
         return root
 
     def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
-        res = []
+        res = None
         stack = []
-        node = root
 
         for _ in range(k):
-            while node:
-                stack.append(node)
-                node = node.left
+            while root:
+                stack.append(root)
+                root = root.left
 
-            node = stack.pop()
-            res.append(node.val)
+            root = stack.pop()
+            res = root.val
+            root = root.right
 
-            node = node.right
-
-        return res[-1]
+        return res
 
 
 def main():

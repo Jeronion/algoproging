@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Other/Темы.md",
+                "file": "Heap/Бинарная куча.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Темы"
+              "title": "Бинарная куча"
             }
           }
         ]
@@ -226,13 +226,23 @@
   },
   "active": "6b717fb4e5db5755",
   "lastOpenFiles": [
-    "Untitled.md",
-    "Logic Building/Алгоритмическое мышление.md",
+    "Heap/Биномиальная куча.md",
+    "Heap/Бинарная куча.md",
+    "Array/Алгоритмы сортировки/O(n log n) сортировки/Пирамидальная сортировка.md",
+    "Array/Алгоритмы сортировки/O(n log n) сортировки/Сортировка слиянием.md",
+    "Array/Алгоритмы сортировки/O(n log n) сортировки/Быстрая сортировка.md",
+    "Tree/AVL-дерево.md",
+    "Heap/Heap.py",
+    "Heap",
+    "Tree/AVL-Tree.py",
     "Tree/Бинарное дерево поиска (BST).md",
     "Tree/Дерево.md",
+    "Tree/Перечисление бинарных деревьев.md",
+    "Other/Темы.md",
+    "Untitled.md",
+    "Logic Building/Алгоритмическое мышление.md",
     "Bitwise Manipulation/Побитовые манипуляции.md",
     "Graph/Граф.md",
-    "Other/Темы.md",
     "Other/Ресурсы для подготовки.md",
     "Dynamic Programming/Динамическое программирование.md",
     "Untitled 3",
@@ -246,22 +256,12 @@
     "Tree/Tree.py",
     "Tree.py",
     "Graph/Поиск в глубину (DFS).md",
-    "Tree",
     "Graph/Поиск в ширину (BFS).md",
     "Stack, Queue, Deque/Стек.md",
     "Stack, Queue, Deque/Дек.md",
     "2026-02-16.md",
     "Связные списки.md",
-    "Untitled 1.base",
     "Array/Матрицы/Матрицы.md",
-    "Array/Алгоритмы сортировки/O(n log n) сортировки/Быстрая сортировка.md",
-    "Array/Алгоритмы сортировки/O(n log n) сортировки/Сортировка слиянием.md",
-    "Array/Алгоритмы сортировки/Сортировки.md",
-    "Array/Структура данных массив/Массив.md",
-    "Array/Структура данных массив/Обход массива.md",
-    "Array/Структура данных массив/Удаление и вставка элементов в массив.md",
-    "Array/Техника двух указателей/Два указателя.md",
-    "Bitwise Manipulation/Untitled",
     "Untitled.canvas"
   ]
 }
