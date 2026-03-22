@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "ae75e467ee6c10ef",
+    "id": "94934400f6d45502",
     "type": "split",
     "children": [
       {
-        "id": "4ea78b1d3ae93c5f",
+        "id": "59be4905a895bed7",
         "type": "tabs",
         "children": [
           {
-            "id": "6b717fb4e5db5755",
+            "id": "e3414148fac3f91e",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -23,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "915aef507a69b0cf",
+    "id": "09cfc9ddf035c2ae",
     "type": "split",
     "children": [
       {
-        "id": "d34a3b81d8d6fc81",
+        "id": "87c5b90c79b9d5a6",
         "type": "tabs",
         "children": [
           {
-            "id": "d4f6f5bdae8ed6a7",
+            "id": "eb0e8f74757ed44b",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +44,7 @@
             }
           },
           {
-            "id": "c123a6630e1b5fa8",
+            "id": "dfc3c8544cfc5f01",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +61,7 @@
             }
           },
           {
-            "id": "04cfcfeb582bb2a6",
+            "id": "46be35b4fce65152",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -74,23 +74,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 350.5086555480957
   },
   "right": {
-    "id": "981fff221467b5d4",
+    "id": "e8c3159dd65c2335",
     "type": "split",
     "children": [
       {
-        "id": "0d80a2aa23307aa9",
+        "id": "76a0853392a3b438",
         "type": "tabs",
         "children": [
           {
-            "id": "59d734d32b007a17",
+            "id": "461879b9c8a75cd5",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Graph/Граф.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,25 +99,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Граф"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "7f0aa884760d0da6",
+            "id": "c94513223bbc4439",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Array/Обход массива.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Обход массива"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "8c793b95ce39f078",
+            "id": "fa00f47dae826157",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -133,7 +131,7 @@
             }
           },
           {
-            "id": "49cf8557421b085c",
+            "id": "b4468cfc7c53263d",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -147,58 +145,17 @@
             }
           },
           {
-            "id": "c64df4cf0a5b73fd",
+            "id": "356856ef5550e479",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Array/Обход массива.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Обход массива"
-            }
-          },
-          {
-            "id": "8ccadffbda7e3af1",
-            "type": "leaf",
-            "state": {
-              "type": "juggl_nodes",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "juggl_nodes"
-            }
-          },
-          {
-            "id": "556d633aa1bde38b",
-            "type": "leaf",
-            "state": {
-              "type": "juggl_style",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "juggl_style"
-            }
-          },
-          {
-            "id": "e9c5d03cec19be03",
-            "type": "leaf",
-            "state": {
-              "type": "juggl_nodes",
-              "state": {},
-              "icon": "ag-node-list",
-              "title": "Juggl nodes"
-            }
-          },
-          {
-            "id": "9791fb28b618eb92",
-            "type": "leaf",
-            "state": {
-              "type": "juggl_style",
-              "state": {},
-              "icon": "ag-style",
-              "title": "Juggl style"
+              "title": "Outline"
             }
           }
         ]
@@ -216,49 +173,47 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "juggl:Juggl global graph": false
+      "bases:Create new base": false
     }
   },
-  "active": "6b717fb4e5db5755",
+  "active": "e3414148fac3f91e",
   "lastOpenFiles": [
-    "Algorithms/Асимптотический анализ.md",
-    "Algorithms/DP/Мемоизация.md",
-    "Algorithms/Bitwise Manipulations/Problems/Умножение числа на 2.md",
-    "Algorithms/Bitwise Manipulations/Problems/XOR чисел от 1 до n.md",
-    "Algorithms/Bitwise Manipulations/Problems/Установка бита на n-ой позиции.md",
-    "Algorithms/Bitwise Manipulations/Problems/Сброс бита на n-й позиции.md",
-    "Algorithms/Bitwise Manipulations/Problems/Переключение бита на n-й позиции.md",
-    "Algorithms/Bitwise Manipulations/Problems/Деление числа на 2 через правый сдвиг.md",
-    "attachments/Темы.md",
-    "attachments/mem_repr_arr.webp",
-    "Data Structures/Array/Operations/Sorting/Сортировка вставками.md",
-    "Data Structures/Array/Operations/Sorting/Сортировка.md",
-    "Heap/Бинарная куча.md",
-    "Heap/Биномиальная куча.md",
-    "Array/Алгоритмы сортировки/O(n log n) сортировки/Пирамидальная сортировка.md",
-    "Array/Алгоритмы сортировки/O(n log n) сортировки/Сортировка слиянием.md",
-    "Array/Алгоритмы сортировки/O(n log n) сортировки/Быстрая сортировка.md",
-    "Tree/AVL-дерево.md",
-    "Heap/Heap.py",
-    "Heap",
-    "Tree/AVL-Tree.py",
-    "Tree/Бинарное дерево поиска (BST).md",
-    "Tree/Дерево.md",
-    "Tree/Перечисление бинарных деревьев.md",
-    "Other/Темы.md",
-    "Untitled.md",
-    "Logic Building/Алгоритмическое мышление.md",
-    "Bitwise Manipulation/Побитовые манипуляции.md",
-    "Graph/Граф.md",
-    "Other/Ресурсы для подготовки.md",
-    "Untitled 3",
-    "Untitled 2",
-    "Untitled 1",
-    "Untitled",
-    "Untitled.base",
-    "Tree/Tree.py",
-    "Tree.py",
-    "Untitled.canvas"
+    "Data Structures/Matrix/Матрица.md",
+    "Data Structures/Stack/Стек.md",
+    "Untitled.canvas",
+    "Data Structures/Heap/Бинарная куча.md",
+    "Algorithms/DP/Динамическое программирование.md",
+    "Algorithms/DP/Problems/Числа Фибоначчи.md",
+    "Algorithms/DP/Problems/Только 2, 3 и 5 (Уродские числа).md",
+    "Algorithms/DP/Problems/Самый дешевый путь.md",
+    "Algorithms/DP/Problems/Трибоначчи (Мячик на лесенке).md",
+    "Algorithms/DP/Problems/Калькулятор (Минимальное количество операций).md",
+    "Algorithms/DP/Problems/Взрывоопасность-2.md",
+    "Algorithms/DP/Problems/Рекурретно заданная последовательность.md",
+    "Algorithms/DP/Problems/Untitled",
+    "Data Structures/Matrix/Problems/Матрица змейкой.md",
+    "Algorithms/DP/Problems",
+    "Data Structures/Matrix/Problems/Матрица расстояния до диагонали.md",
+    "Data Structures/Matrix/Problems/Матрица суммы индексов.md",
+    "Data Structures/Matrix/Problems/Шахматная матрица.md",
+    "Data Structures/Matrix/Problems/Седловые точки матрицы.md",
+    "Data Structures/Matrix/Problems/Симметричная матрица.md",
+    "Data Structures/Stack/Problems/Реверс массива c исп. стэка.md",
+    "Data Structures/Matrix/Problems",
+    "Data Structures/Stack/Stack.py",
+    "Data Structures/Stack/Problems/Проверка правильности скобочного выражения.md",
+    "Data Structures/Stack/Problems/Преобразование инфиксного выражения в постфиксную запись.md",
+    "Data Structures/Stack/Problems/Постфиксная запись (с переменными).md",
+    "Data Structures/Stack/Problems/Вычисление инфиксного выражения с переменными и функциями.md",
+    "Data Structures/Stack/LIFO.md",
+    "Data Structures/Queue/Очередь.md",
+    "Data Structures/Stack/Problems",
+    "Data Structures/Stack/Untitled.md",
+    "Data Structures/Queue/Queue.py",
+    "Data Structures/Deque/Deque.py",
+    "Problem Solving/USED/Deque.py",
+    "Problem Solving/USED/Queue.py",
+    "Data Structures/Queue/Problems/Сортировщик поездов.md",
+    "Data Structures/Queue/Problems"
   ]
 }
