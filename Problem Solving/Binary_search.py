@@ -104,16 +104,6 @@ def solution_2():
 
 
 # https://informatics.msk.ru/mod/statements/view.php?id=192&chapterid=4#1
-def solution_3():
-    N = int(input())
-    c = 0
-    while N - 1:
-        N = N // 2 + (N % 2)
-        c += 1
-    print(c)
-
-
-# https://informatics.msk.ru/mod/statements/view.php?id=192&chapterid=4#1
 def solution_4():
     N, K = map(int, input().split())
     arr = list(map(int, input().split()))
