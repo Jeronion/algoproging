@@ -1,8 +1,4 @@
 
-tags: #tree #bst #ds #binary_tree
-
----
-
 ## Определение
 
 **DFS (Depth-First Search)** — обход дерева вглубь.

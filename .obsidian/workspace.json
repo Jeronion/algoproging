@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "59be4905a895bed7",
+        "id": "63c6c2e4abac6422",
         "type": "tabs",
         "children": [
           {
-            "id": "e3414148fac3f91e",
+            "id": "b25fcbd63285ab67",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Data Structures/Array/Operations/Searching/Problems/Целочисленный квадратный корень.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Целочисленный квадратный корень"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -180,44 +176,45 @@
       "bases:Create new base": false
     }
   },
-  "active": "e3414148fac3f91e",
+  "active": "b25fcbd63285ab67",
   "lastOpenFiles": [
-    "Data Structures/Array/Operations/Searching/Problems/Правый интервал.md",
-    "Data Structures/Array/Operations/Searching/Problems/Целочисленный квадратный корень.md",
-    "Data Structures/Array/Operations/Searching/Problems/Успешные пары заклинаний и зелий.md",
-    "Data Structures/Array/Operations/Searching/Problems/Поиск k ближайших элементов.md",
-    "Data Structures/Array/Operations/Searching/Problems/H-Index II.md",
-    "Data Structures/Array/Operations/Searching/Problems/Untitled",
-    "Data Structures/Array/Operations/Searching/Problems/Поиск пика в горном массиве.md",
-    "Data Structures/Array/Operations/Searching/Problems/Поиск уникального элемента в парных элементах.md",
-    "Data Structures/Array/Operations/Searching/Problems/Бинарный поиск по ответу.md",
-    "Data Structures/Array/Operations/Searching/Problems/Поиск в сдвинутом отсортированном массиве.md",
-    "Data Structures/Array/Operations/Searching/Problems/Поиск границ.md",
-    "Data Structures/Array/Operations/Searching/Problems/Бинарный поиск базовые алгоритмы.md",
+    "Problem Solving/Graph/Подсчёт компонент связности графа.md",
+    "Problem Solving/Graph/Заливка области.md",
+    "Problem Solving/CountingArray/Наиб. палиндром из строки.md",
+    "Problem Solving/BinarySearch/Бинарный поиск базовые алгоритмы.md",
+    "attachments/Тэги.md",
+    "attachments/Темы.md",
+    "attachments/Ресурсы для подготовки.md",
+    "attachments/План обучения.md",
+    "Problem Solving/Deque/Гоблины и шаманы.md",
+    "Algorithms/DP/Табуляция.md",
+    "Algorithms/DP/Мемоизация.md",
+    "Algorithms/DP/Динамическое программирование.md",
+    "Algorithms/Bitwise Manipulations/Битовые операторы.md",
+    "Algorithms/Basics/Рекурсия.md",
+    "Algorithms/Basics/Теорема Мастера.md",
+    "Algorithms/Basics/Разделяй и властвуй.md",
+    "Algorithms/Basics/Асимптотический анализ.md",
+    "Problem Solving/DP/Самый дешевый путь.md",
+    "Problem Solving/BinarySearch/Объед. кв. и куб. последовательностей.md",
+    "Data Structures/Linked List/Связный список.md",
     "Data Structures/Array/Operations/Searching/Бинарный поиск.md",
-    "Data Structures/Linked List/Problems/Задача Иосифа.md",
-    "Data Structures/Linked List/Problems/Разбиение списка относительно значения.md",
-    "Data Structures/Linked List/Problems/Удаление дубликатов из отсорт. связ. списка.md",
-    "Data Structures/Linked List/Problems/Удаление дубликатов из отсорт. связ. списка II.md",
-    "Data Structures/Linked List/Problems/Поворот списка.md",
-    "Data Structures/Linked List/Problems/Обмен соседних узлов.md",
-    "Data Structures/Linked List/Problems/Слияние двух отсорт. связ. списков.md",
-    "Data Structures/Linked List/Problems/Удаление N-го узла с конца списка.md",
-    "Data Structures/Linked List/Problems/Сложение двух чисел.md",
-    "Data Structures/Array/Techniques/Problems/TwoPointers/Сортировка цветов.md",
-    "Data Structures/Linked List/Problems",
-    "Data Structures/Array/Techniques/Problems/TwoPointers/Кол-во подпосл-тей, удов. усл..md",
-    "Data Structures/Array/Techniques/Problems/TwoPointers/Ближайшая тройка к заданной сумме.md",
-    "Data Structures/Array/Techniques/Problems/TwoPointers/Количество валидных треугольников.md",
-    "Data Structures/Array/Techniques/Problems/TwoPointers/Проверка палиндрома.md",
-    "Data Structures/Array/Techniques/Problems/TwoPointers",
-    "Data Structures/Graph/Problems",
+    "Data Structures/Array/Operations/Sorting/Сортировка подсчётом.md",
+    "Data Structures/Array/Techniques/Массив подсчёта.md",
+    "Data Structures/Stack/Стек.md",
+    "Data Structures/Stack/LIFO.md",
+    "Data Structures/Queue/FIFO.md",
+    "penis.py",
+    "Algorithms/Basics",
+    "attachments/mem_repr_arr.webp",
+    "Data Structures/Array/Operations/Searching/Problems/Untitled",
+    "Problem Solving/LinkedList",
+    "Problem Solving/TwoPointers",
+    "Problem Solving/Graph",
     "Untitled.canvas",
     "Algorithms/DP/Problems/Untitled",
-    "Algorithms/DP/Problems",
-    "Data Structures/Matrix/Problems",
-    "Data Structures/Stack/Stack.py",
-    "Data Structures/Stack/Problems",
-    "Data Structures/Queue/Queue.py"
+    "Problem Solving/DP",
+    "Problem Solving/Matrix",
+    "Data Structures/Stack/Stack.py"
   ]
 }

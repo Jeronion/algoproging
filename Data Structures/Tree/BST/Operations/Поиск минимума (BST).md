@@ -1,8 +1,4 @@
 
-tags: #tree #bst #ds #binary_tree
-
----
-
 Минимум в BST — самый левый узел.
 
 ```python

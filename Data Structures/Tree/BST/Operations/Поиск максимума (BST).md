@@ -1,8 +1,4 @@
 
-tags: #tree #bst #ds #binary_tree
-
----
-
 Максимум в BST — самый правый.
 
 ```python
