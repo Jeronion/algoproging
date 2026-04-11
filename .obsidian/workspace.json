@@ -11,10 +11,14 @@
             "id": "b25fcbd63285ab67",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Problem Solving/Array/Следующий палиндром.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Следующий палиндром"
             }
           }
         ]
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 371.5086555480957
+    "width": 317.5086555480957
   },
   "right": {
     "id": "e8c3159dd65c2335",
@@ -178,32 +182,37 @@
   },
   "active": "b25fcbd63285ab67",
   "lastOpenFiles": [
-    "Problem Solving/Graph/Подсчёт компонент связности графа.md",
-    "Problem Solving/Graph/Заливка области.md",
-    "Problem Solving/CountingArray/Наиб. палиндром из строки.md",
-    "Problem Solving/BinarySearch/Бинарный поиск базовые алгоритмы.md",
-    "attachments/Тэги.md",
-    "attachments/Темы.md",
+    "Problem Solving/Matrix/Матричные перестановки строк и столбцов.md",
+    "Problem Solving/Array/Следующий палиндром.md",
+    "Problem Solving/Matrix/Игра в жизнь.md",
+    "Problem Solving/Matrix/Зигзагообразный обход матрицы.md",
+    "Problem Solving/Matrix/Матрица змейкой.md",
+    "Problem Solving/Matrix/Матрица расстояния до диагонали.md",
+    "Problem Solving/Matrix/Седловые точки матрицы.md",
+    "Problem Solving/Matrix/Транспонирование матрицы.md",
+    "Problem Solving/Matrix/Шахматная матрица.md",
+    "Problem Solving/Matrix/Симметричная матрица.md",
+    "Problem Solving/Matrix/Матрица суммы индексов.md",
+    "Problem Solving/Matrix/Поворот кв. матрицы на 90° против час. стрелки.md",
+    "Problem Solving/Matrix/Печать матрицы по спирали.md",
+    "Problem Solving/Matrix/Проверка магического квадрата.md",
+    "Data Structures/Array/Operations/Вставка (Массив).md",
     "attachments/Ресурсы для подготовки.md",
-    "attachments/План обучения.md",
-    "Problem Solving/Deque/Гоблины и шаманы.md",
-    "Algorithms/DP/Табуляция.md",
-    "Algorithms/DP/Мемоизация.md",
-    "Algorithms/DP/Динамическое программирование.md",
-    "Algorithms/Bitwise Manipulations/Битовые операторы.md",
-    "Algorithms/Basics/Рекурсия.md",
-    "Algorithms/Basics/Теорема Мастера.md",
-    "Algorithms/Basics/Разделяй и властвуй.md",
-    "Algorithms/Basics/Асимптотический анализ.md",
-    "Problem Solving/DP/Самый дешевый путь.md",
-    "Problem Solving/BinarySearch/Объед. кв. и куб. последовательностей.md",
-    "Data Structures/Linked List/Связный список.md",
-    "Data Structures/Array/Operations/Searching/Бинарный поиск.md",
-    "Data Structures/Array/Operations/Sorting/Сортировка подсчётом.md",
-    "Data Structures/Array/Techniques/Массив подсчёта.md",
-    "Data Structures/Stack/Стек.md",
-    "Data Structures/Stack/LIFO.md",
-    "Data Structures/Queue/FIFO.md",
+    "attachments/Темы.md",
+    "attachments/Что-то (Недоделано).canvas",
+    "attachments/Тэги.md",
+    "Data Structures/Array/Techniques/Отрицательная маркировка.md",
+    "Data Structures/String/Алгоритм Кнута-Морриса-Пратта.md",
+    "Data Structures/String/Строка.md",
+    "Data Structures/Array/Operations/Поворот (Массив).md",
+    "Data Structures/Array/Operations/Удаление (Массив).md",
+    "Data Structures/Array/Operations/Обход (Массив).md",
+    "Data Structures/Matrix/Матрица.md",
+    "Data Structures/Matrix/Operations/Обход по диагоналям (Матрица).md",
+    "Problem Solving/String",
+    "Data Structures/String",
+    "Problem Solving/Array",
+    "attachments/План обучения.canvas",
     "penis.py",
     "Algorithms/Basics",
     "attachments/mem_repr_arr.webp",
@@ -212,9 +221,6 @@
     "Problem Solving/TwoPointers",
     "Problem Solving/Graph",
     "Untitled.canvas",
-    "Algorithms/DP/Problems/Untitled",
-    "Problem Solving/DP",
-    "Problem Solving/Matrix",
-    "Data Structures/Stack/Stack.py"
+    "Algorithms/DP/Problems/Untitled"
   ]
 }
