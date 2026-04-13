@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Problem Solving/Array/Следующий палиндром.md",
+                "file": "Problem Solving/BinarySearch/Коко ест бананы.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Следующий палиндром"
+              "title": "Коко ест бананы"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5086555480957
+    "width": 329.5086555480957
   },
   "right": {
     "id": "e8c3159dd65c2335",
@@ -182,8 +182,37 @@
   },
   "active": "b25fcbd63285ab67",
   "lastOpenFiles": [
-    "Problem Solving/Matrix/Матричные перестановки строк и столбцов.md",
+    "Problem Solving/BinarySearch/Коко ест бананы.md",
+    "Problem Solving/BinarySearch/Распределение книг.md",
+    "Linear Algebra/Линейные уравнения и системы.md",
+    "Problem Solving/BinarySearch/Мин. x, x! которого содержит > n конечных нулей.md",
+    "Data Structures/Matrix/Матрица.md",
+    "Data Structures/Array/Operations/Searching/Метод Ньютона для нахождения корня числа.md",
+    "venv/lib/python3.14/site-packages/sympy-1.14.0.dist-info/RECORDl10m75ak.tmp",
+    "venv/lib/python3.14/site-packages/sympy-1.14.0.dist-info/REQUESTED",
+    "venv/lib/python3.14/site-packages/sympy-1.14.0.dist-info/INSTALLER",
+    "venv/bin/isympy",
+    "venv/lib/python3.14/site-packages/sympy/vector/__pycache__/vector.cpython-314.pyc",
+    "venv/lib/python3.14/site-packages/sympy/vector/tests/__pycache__/test_vector.cpython-314.pyc",
+    "venv/lib/python3.14/site-packages/sympy/vector/tests/__pycache__/test_printing.cpython-314.pyc",
+    "venv/lib/python3.14/site-packages/sympy/vector/tests/__pycache__/test_parametricregion.cpython-314.pyc",
+    "venv/lib/python3.14/site-packages/sympy/vector/tests/__pycache__/test_operators.cpython-314.pyc",
+    "venv/lib/python3.14/site-packages/sympy/vector/tests/__pycache__/test_integrals.cpython-314.pyc",
+    "venv/lib/python3.14/site-packages/sympy/plotting/tests/test_region_xor.png",
+    "venv/lib/python3.14/site-packages/sympy/plotting/tests/test_region_or.png",
+    "venv/lib/python3.14/site-packages/sympy/plotting/tests/test_region_not.png",
+    "venv/lib/python3.14/site-packages/sympy/plotting/tests/test_region_and.png",
+    "venv/lib/python3.14/site-packages/pip-26.0.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
+    "venv/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md",
+    "Problem Solving/Array/Сжатие посл-ти по локальным экстремумам.md",
+    "attachments/Что-то (Недоделано).canvas",
+    "Data Structures/Array/Operations/Вставка (Массив).md",
+    "Data Structures/Array/Operations/Searching/Экспоненциальный поиск.md",
+    "Data Structures/Array/Operations/Searching/Тернарный поиск.md",
+    "Data Structures/Array/Operations/Searching/Бинарный поиск.md",
+    "Linear Algebra/Матрицы.md",
     "Problem Solving/Array/Следующий палиндром.md",
+    "Problem Solving/Matrix/Матричные перестановки строк и столбцов.md",
     "Problem Solving/Matrix/Игра в жизнь.md",
     "Problem Solving/Matrix/Зигзагообразный обход матрицы.md",
     "Problem Solving/Matrix/Матрица змейкой.md",
@@ -194,33 +223,8 @@
     "Problem Solving/Matrix/Симметричная матрица.md",
     "Problem Solving/Matrix/Матрица суммы индексов.md",
     "Problem Solving/Matrix/Поворот кв. матрицы на 90° против час. стрелки.md",
-    "Problem Solving/Matrix/Печать матрицы по спирали.md",
-    "Problem Solving/Matrix/Проверка магического квадрата.md",
-    "Data Structures/Array/Operations/Вставка (Массив).md",
-    "attachments/Ресурсы для подготовки.md",
-    "attachments/Темы.md",
-    "attachments/Что-то (Недоделано).canvas",
-    "attachments/Тэги.md",
-    "Data Structures/Array/Techniques/Отрицательная маркировка.md",
-    "Data Structures/String/Алгоритм Кнута-Морриса-Пратта.md",
-    "Data Structures/String/Строка.md",
-    "Data Structures/Array/Operations/Поворот (Массив).md",
-    "Data Structures/Array/Operations/Удаление (Массив).md",
-    "Data Structures/Array/Operations/Обход (Массив).md",
-    "Data Structures/Matrix/Матрица.md",
-    "Data Structures/Matrix/Operations/Обход по диагоналям (Матрица).md",
-    "Problem Solving/String",
-    "Data Structures/String",
-    "Problem Solving/Array",
     "attachments/План обучения.canvas",
-    "penis.py",
-    "Algorithms/Basics",
     "attachments/mem_repr_arr.webp",
-    "Data Structures/Array/Operations/Searching/Problems/Untitled",
-    "Problem Solving/LinkedList",
-    "Problem Solving/TwoPointers",
-    "Problem Solving/Graph",
-    "Untitled.canvas",
-    "Algorithms/DP/Problems/Untitled"
+    "Untitled.canvas"
   ]
 }
