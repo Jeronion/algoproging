@@ -1,5 +1,5 @@
 
-tags: #binary_heap #priority_queue  #array
+tags: #binary_heap #array
 
 ---
 
