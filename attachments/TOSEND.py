@@ -1,7 +1,4 @@
-xorVal = 6
-
-print(bin(14))
-
-xorVal &= -xorVal
-
-print(xorVal)
+s = 0
+for i in range(100_000_000):
+    s += 1
+print(s)
