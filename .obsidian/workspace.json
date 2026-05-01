@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Problem Solving/HashTable/Самая длинная последовательная подпоследовательность.md",
+                "file": "Problem Solving/TwoPointers/Кол-во подпосл-тей, удов. усл..md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Самая длинная последовательная подпоследовательность"
+              "title": "Кол-во подпосл-тей, удов. усл."
             }
           }
         ]
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Файловый менеджер"
             }
           },
           {
@@ -171,21 +171,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "bases:Создать новую базу": false
     }
   },
   "active": "015dee28e1655bfb",
   "lastOpenFiles": [
-    "Problem Solving/HashTable/Проверка анаграмм.md",
-    "Problem Solving/HashTable/Самая длинная последовательная подпоследовательность.md",
-    "Problem Solving/HashTable/Проверка, является ли массив подмножеством другого массива.md",
+    "Problem Solving/TwoPointers/Наименьший подмассив с суммой больше заданного значения.md",
+    "Problem Solving/TwoPointers/Поиск пары с заданной суммой в отсортированном массиве.md",
+    "Problem Solving/TwoPointers/Поиск подстроки.md",
+    "Problem Solving/TwoPointers/Проверка палиндрома.md",
     "Problem Solving/HashTable/Квадратичное зондирование в хешировании.md",
+    "Problem Solving/HashTable/Проверка анаграмм.md",
+    "Problem Solving/HashTable/Проверка, является ли массив подмножеством другого массива.md",
+    "Problem Solving/HashTable/Самая длинная последовательная подпоследовательность.md",
     "Problem Solving/HashTable/Линейное зондирование в хешировании.md",
     "Data Structures/HashTable/Хеширование с цепочками.md",
     "Data Structures/HashTable/Линейное зондирование.md",
@@ -206,10 +210,6 @@
     "Problem Solving/Bitwise/Генерация кодов Грея.md",
     "Problem Solving/Bitwise/Быстрое возведение в степень.md",
     "Problem Solving/Array/Генерация всех подмножеств (Subsets) с помощью битовой маски.md",
-    "Problem Solving/Array/Сжатие посл-ти по локальным экстремумам.md",
-    "Algorithms/Bitwise Manipulations/Битовые операторы.md",
-    "Problem Solving/Bitwise/Проверка корректности судоку с помощью битовых масок.md",
-    "Problem Solving/Array/Следующий палиндром.md",
     "Problem Solving/Bitwise/Untitled",
     "attachments/Что-то (Недоделано).canvas",
     "Problem Solving/Sorting",
