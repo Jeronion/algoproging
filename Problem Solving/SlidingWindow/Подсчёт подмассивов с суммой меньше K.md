@@ -1,5 +1,5 @@
 
-tags: #array #sliding-window #two-pointers
+tags: #array #sliding_window #two_pointers
 
 ---
 
