@@ -1,5 +1,5 @@
 
-tags: #array #bitmask #combinatorics 
+tags: #array #bitwise #combinatorics 
 
 ---
 
