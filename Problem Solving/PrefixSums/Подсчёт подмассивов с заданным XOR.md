@@ -1,5 +1,5 @@
 
-tags: #array #hash_table #xor
+tags: #array #hash_table #bitwise 
 
 ---
 
