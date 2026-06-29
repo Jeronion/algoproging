@@ -60,3 +60,24 @@ def heapify(self, i):
 - **Память:** O(log n) из-за рекурсии (можно реализовать итеративно с циклом, тогда O(1)).
 
 ---
+
+## Итеративная реализация
+
+```python
+def heapify(self, i):
+    while True:
+        smallest = i
+        l = self.left(i)
+        r = self.right(i)
+
+        if l < len(self.arr) and self.arr[l] < self.arr[smallest]:
+            smallest = l
+
+        if r < len(self.arr) and self.arr[r] < self.arr[smallest]:
+            smallest = r
+        
+        if smallest == i:
+            break
+        
+        self.arr[i], self.arr[smallest] = self.arr[smallest], self.arr[i]
+```
